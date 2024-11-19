@@ -1,0 +1,111 @@
+## Part 2
+
+#### For FWM - OWASP
+
+[Read this article about OWASP](https://www.cloudflare.com/learning/security/threats/owasp-top-10/)
+
+Give answers in swedish to the following questions in a text-file in your repo:
+______________________________________________
+______________________________________________
+
+
+1.1 Fråga: What is OWASP and what is its primary mission as described in the article? 
+
+1.1 Svar: OWASP står för Open Web Application Security Project och är en internationell non-profit organisation som är dedikerad till webbapplikationssäkerhet. En av deras huvudprinciper är att allt material ska vara fritt tillgängligt och lätt åtkomligt på deras webbplats. Detta gör det möjligt för alla att förbättra säkerheten i sina webbapplikationer.
+
+______________________________________________
+
+
+1.2 Fråga: Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+
+1.2 Svar: Konceptet med Injection är att en inkräktare utnyttjar en säkerhetsbrist i en webbapplikation genom att skicka skadlig kod via ett användarinmatningsfält, som till exempel i ett formulär. Om applikationen inte ordentligt validerar och säkerställer användardata, kan den skadliga koden köras av databasen. Då ges inkräktaren möjligheten att manipulera, läsa eller radera data i databasen. Inkräktaren kan även få obehörig åtkomst till användarkonton eller administrativa rättigheter, och kan också använda injektionen för att stjäla känslig information eller förändra viktiga data i systemet.
+
+______________________________________________
+
+
+1.3 Fråga: Explain two strategies to prevent Broken Authentication vulnerabilities.
+
+1.3 Svar: Tvåfaktorsautentisering (2FA) är en extra säkerhetskontroll för att skydda användarens konto. Det innebär att användaren behöver genomföra en andra verifiering, till exempel en kod som skickas till användarens mobiltelefon eller som genereras av en autentiseringsapp. Detta gör det mycket svårare för en angripare att komma åt kontot, även om lösenordet har blivit exponerat, eftersom den andra faktorn också behövs för att logga in.
+
+En annan strategi för att förhindra intrång är att begränsa eller fördröja upprepade inloggningsförsök. Det innebär att om en användare eller IP-adress gör för många misslyckade inloggningsförsök på kort tid, så blockeras fler försök under en viss tid. Det gör blir svårare för inkräktaren att använda brute force-attacker, där de försöker många lösenord på rad.
+
+______________________________________________
+
+
+1.4 Fråga: Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+
+1.4 Svar: Osäker deserialisering innebär att deserialisera data från opålitliga källor, vilket kan leda till allvarliga konsekvenser som DDoS attacker och fjärrkörning av kod. 
+DDos attacker kan överbelaste applikationen och fjärrkörning av kod innebär att skadlig kod körs på servern, vilket kan ge hackaren full kontroll i systemet.
+
+För att förebygga osäker deserialisering från opålitliga källor bör man implementera typkontroller så ingen icke godkänd data trängs in. Man bör även övervaka deserialisering för att upptäcka misstänkt aktivitet samt använda säkerhetstester och uppdatera bibliotek för att identifiera och åtgärda sårbarheter. Genom att följa dessa åtgärder kan man skydda sina applikationer mot osäker deserialisering.
+
+______________________________________________
+
+
+1.5 Fråga: Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+
+1.5 Svar: Cross-Site Scripting är en sårbarhet inom webbapplikationer där användare kan lägga till en egen kod i en URL eller på en webb, vilket andra användare kan se. Detta blir möjligt för hackaren att köra skadlig JavaScript-kod i offrets webbläsare.
+
+Två sätt att skydda sig mot XSS-attacker är att undvika HTML i indata samt att validera och sanera indata. Genom att förhindra användare från att lägga in HTML i formulärfältet och istället använda alternativ som markdown eller WYSIWYG-editorer. MAn kan implementera regler för att säkerställa att indata uppfyller specifika kriterier och sanera data efter att den har skickats till servern men innan den visas för andra användare. 
+
+______________________________________________
+______________________________________________
+#### For UXF - WCAG - 
+(Missade att läsa for UXF, men sparar svaren då det var lärorikt)
+
+[Do this tutorial](https://www.w3schools.com/accessibility/)
+
+Give answers in swedish to the following questions in a text-file in your repo:
+______________________________________________
+______________________________________________
+
+1 .Fråga: Explain the importance of semantic elements in web development according to accessibility guidelines. Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
+
+1. Svar: 
+Semantiska element är viktiga eftersom de förbättrar tillgängligheten för personer med olika typer av funktionsnedsättningar. De hjälper även personer som kan påverkas av temporära situationer eller miljöfaktorer, som till exempel starkt ljus, fest-miljö eller tillfälliga syn- eller hörselproblem. Genom att använda semantiska element får användare en tydlig och strukturerad navigering på webbplatsen, vilket gör det enklare att hitta rätt innehåll, även när omgivningen är distraherande eller när användaren har tillfälliga svårigheter.
+
+Ett exempel på ett semantiskt element är <main>, som markerar sidans huvudinnehåll. Detta gör det lättare för hjälpmedel som skärmläsare att identifiera och hoppa direkt till det viktigaste innehållet, vilket är särskilt användbart för personer med synnedsättningar eller när användaren är i en miljö med distraktioner.
+
+Ett annat exempel är <aside>, som används för att markera sekundärt innehåll, som till exempel relaterad information eller sidoinnehåll. Det gör det tydligare för användare att denna information inte är direkt kopplad till huvudämnet. För personer med tillfälliga hörselnedsättningar, till exempel i en högljudd festmiljö, kan innehåll i ett <aside> vara användbart utan att störa det viktigaste innehållet. Genom att separera huvud- och sidoinnehåll hjälper semantiska element användare att enklare hitta och förstå information på webbplatsen.
+
+______________________________________________
+
+
+2. Fråga: Describe the significance of color contrast in web design concerning accessibility. How does adhering to color contrast guidelines benefit users with visual impairments, and what are the recommended contrast ratios as per WCAG standards?
+
+2. Svar: Färgkontrast är viktigt i webdesign för att göra text och andra delar av en webbplats lättare att se, särskilt för personer med synnedsättningar. Om kontrasten mellan text och bakgrund är för låg kan det vara svårt för personer med nedsatt syn eller färgblindhet att läsa och förstå innehållet.
+
+Enligt riktlinjerna från WCAG bör kontrasten mellan text och bakgrund vara tillräcklig för att göra texten läsbar. För vanlig text rekommenderas att kontrasten är stark nog så att den är minst fyra och en halv gånger starkare än bakgrunden. För större text, som rubriker, räcker det med att kontrasten är minst tre gånger starkare än bakgrunden.
+Webbplatser blir mer tillgängliga för personer med synproblem och gör att fler människor kan använda och förstå innehållet på webben.
+
+______________________________________________
+
+
+3. Fråga: Discuss the role of alternative text (alt text) for images in accordance with accessibility guidelines. Why is it crucial to include descriptive alt text, and how does this contribute to making web content more accessible? Provide examples to illustrate your explanation.
+
+3. Svar: Alt-text är en beskrivning av bilder på en webbplats. Den hjälper personer som inte kan se bilder, till exempel de som använder skärmläsare för att läsa text. Skärmläsare läser upp alt-texten, så användare med synnedsättningar kan förstå vad bilden handlar om.
+Om det inte finns någon alt-text missar personer som använder skärmläsare informationen i bilderna.
+
+Ett exempel är att det finns en bild på en katt som ligger och sover på en soffa. Och i alt-texen står det "En orange katt som sover på en soffa i ett soligt rum."
+
+Att använda alt-text gör man webben mer tillgänglig för alla och hjälper även sökmotorer att förstå bilder.
+
+______________________________________________
+
+
+4. Fråga: Explain the purpose of landmarks in creating accessible web content. How do landmarks aid in navigation for users of assistive technologies, and can you provide examples of commonly used landmark elements in HTML?
+
+4. Svar: Landmärken på en webbsida hjälper användare att snabbt hitta olika delar av sidan, som huvudinnehåll eller navigering. För personer som använder hjälpmedel, som skärmläsare, är landmärken viktiga eftersom de gör det möjligt att hoppa direkt till specifika delar av webbplatsen utan att behöva läsa igenom allt innehåll. Detta gör webbplatsen lättare och snabbare att navigera.
+
+Exempel på vanliga landmärken:
+<header> – Huvudområdet på sidan, ofta med logotyp och menyer.
+<nav> – Navigeringsmenyn, där användare hittar länkar för att ta sig runt på sidan.
+<main> – Huvudinnehållet på sidan.
+<footer> – Sidfoten, ofta med information om kontakt m.m.
+
+______________________________________________
+
+
+5. Fråga:  Describe the significance of proper form labeling. Why is it important to label form elements, and what strategies can developers implement to ensure effective labeling for improved accessibility?
+
+5. Svar: Att använda rätt labels och placeholders är viktigt för att göra formulär tillgängliga, särskilt för personer som använder hjälpmedel som skärmläsare. Labels gör det tydligt för användaren vad de ska fylla i i varje fält, vilket är särskilt viktigt för personer med synnedsättning. Om fält inte är märkta med en label kan det bli svårt att förstå vad som ska fyllas i. Placeholders ger extra information om vad som förväntas i ett fält, men de ska inte ersätta labels, eftersom de försvinner när användaren börjar skriva. För grupper av fält, som radioknappar eller kryssrutor, används <fieldset> och <legend> för att visa att dessa fält hör ihop. 
