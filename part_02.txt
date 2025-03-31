@@ -9,7 +9,7 @@ ______________________________________________
 ______________________________________________
 
 
-1.1 Fråga: What is OWASP and what is its primary mission as described in the article? 
+1.1 Fråga: What is OWASP and what is its primary mission as described ivn the article? 
 
 1.1 Svar: OWASP står för Open Web Application Security Project och är en internationell non-profit organisation som är dedikerad till webbapplikationssäkerhet. En av deras huvudprinciper är att allt material ska vara fritt tillgängligt och lätt åtkomligt på deras webbplats. Detta gör det möjligt för alla att förbättra säkerheten i sina webbapplikationer.
 
@@ -62,7 +62,7 @@ ______________________________________________
 1 .Fråga: Explain the importance of semantic elements in web development according to accessibility guidelines. Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
 
 1. Svar: 
-Semantiska element är viktiga eftersom de förbättrar tillgängligheten för personer med olika typer av funktionsnedsättningar. De hjälper även personer som kan påverkas av temporära situationer eller miljöfaktorer, som till exempel starkt ljus, fest-miljö eller tillfälliga syn- eller hörselproblem. Genom att använda semantiska element får användare en tydlig och strukturerad navigering på webbplatsen, vilket gör det enklare att hitta rätt innehåll, även när omgivningen är distraherande eller när användaren har tillfälliga svårigheter.
+Semantiska element är viktiga eftersom de förbättrar tillgängligheten för personer med olika typer av funktionsnedsättningar. De hjälper även personer som kan påverkas av temporära situationer eller miljöfaktorer, som till exempel starkt ljus, fest-miljö eller tillfälliga syn eller hörselproblem. Genom att använda semantiska element får användare en tydlig och strukturerad navigering på webbplatsen, vilket gör det enklare att hitta rätt innehåll, även när omgivningen är distraherande eller när användaren har tillfälliga svårigheter.
 
 Ett exempel på ett semantiskt element är <main>, som markerar sidans huvudinnehåll. Detta gör det lättare för hjälpmedel som skärmläsare att identifiera och hoppa direkt till det viktigaste innehållet, vilket är särskilt användbart för personer med synnedsättningar eller när användaren är i en miljö med distraktioner.
 
